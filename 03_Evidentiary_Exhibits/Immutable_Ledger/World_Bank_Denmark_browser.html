@@ -1,0 +1,686 @@
+<html data-reactroot="" data-reactid="1" data-react-checksum="-1457599737" lang="en" data-react-helmet="lang"><head data-reactid="2"><meta charset="utf-8" data-reactid="3"><title data-reactid="4">Denmark | Data</title><meta content="width=device-width, initial-scale=1, minimal-ui" name="viewport" data-reactid="5"><meta content="IE=Edge" http-equiv="X-UA-Compatible" data-reactid="6"><link href="/favicon.ico?v=1.1" rel="shortcut icon" data-reactid="8"><meta name="google-site-verification" content="ByFDZmo3VoJURCHrA3WHjth6IAISYQEbe20bfzTPCPo" data-reactid="9"><meta property="og:title" content="World Bank Open Data" data-reactid="10"><meta property="og:description" content="Free and open access to global development data" data-reactid="11"><meta property="og:image" content="https://data.worldbank.org/assets/images/logo-wb-header-en.svg" data-reactid="12"><meta property="og:url" content="https://data.worldbank.org" data-reactid="13"><meta property="og:site_name" content="World Bank Open Data" data-reactid="14"><meta name="twitter:title" content="World Bank Open Data" data-reactid="15"><meta name="twitter:description" content="Free and open access to global development data" data-reactid="16"><meta name="twitter:image" content="https://data.worldbank.org/assets/images/logo-wb-header-en.svg" data-reactid="17"><meta property="og:title" content="World Bank Open Data" data-reactid="18"><meta property="og:description" content="Free and open access to global development data" data-reactid="19"><meta property="og:image" content="https://data.worldbank.org/assets/images/logo-wb-header-en.svg" data-reactid="20"><meta property="og:url" content="https://data.worldbank.org" data-reactid="21"><meta property="og:site_name" content="World Bank Open Data" data-reactid="22"><meta name="twitter:title" content="World Bank Open Data" data-reactid="23"><meta name="twitter:description" content="Free and open access to global development data" data-reactid="24"><meta name="twitter:image" content="https://data.worldbank.org/assets/images/logo-wb-header-en.svg" data-reactid="25"><meta name="twitter:card" content="@worldbankdata" data-reactid="26"><meta name="twitter:creator" content="@worldbankdata" data-reactid="27"><link href="/dist/main-7ee81365fd6a0de5430a.css" media="screen, projection" rel="stylesheet" type="text/css" data-reactid="28"><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.6"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script data-reactid="29">
+  var wbgData = wbgData || {};
+
+  wbgData.page = {
+      pageInfo: {
+          pageName: "",
+          pageCategory: "",
+          pageUid: "",
+          pageFirstPub: "",
+          pageLastMod: "",
+          author: "",
+          topicTag: "",
+          subtopicTag: "",
+          contentType: "",
+          channel: "",
+          webpackage: ""
+      },
+      sectionInfo: {
+          siteSection: "",
+          subsectionP2: "",
+          subsectionP3: "",
+          subsectionP4: "",
+          subsectionP5: "",
+      }
+  }
+  wbgData.site = {
+      pageLoad: "N",
+      siteInfo: {
+          siteLanguage: "",
+          siteCountry: "",
+          siteEnv: "",
+          siteType: "datamain",
+          siteRegion: "",
+          userIpaddressType: "",
+      },
+      techInfo: {
+          cmsType: "",
+          bussVPUnit: "",
+          bussUnit: "",
+          bussUserGroup: "",
+          bussAgency: "",
+      },
+  }
+</script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/launch-7bc0cdc67098.min.js" async="" data-reactid="30"></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/EXe6cb5b15a4484c15b2f9ed4b1739e9d7-libraryCode_source.min.js" async=""></script><style id="at-makers-style" class="at-flicker-control">
+.mboxDefault {visibility: hidden;}
+</style><style type="text/css">/* required styles */
+
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-pane > svg,
+.leaflet-pane > canvas,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	}
+.leaflet-container {
+	overflow: hidden;
+	}
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+	  -webkit-user-drag: none;
+	}
+/* Prevents IE11 from highlighting tiles in blue */
+.leaflet-tile::selection {
+	background: transparent;
+}
+/* Safari renders non-retina tile on retina better with this, but Chrome is worse */
+.leaflet-safari .leaflet-tile {
+	image-rendering: -webkit-optimize-contrast;
+	}
+/* hack that prevents hw layers "stretching" when loading new tiles */
+.leaflet-safari .leaflet-tile-container {
+	width: 1600px;
+	height: 1600px;
+	-webkit-transform-origin: 0 0;
+	}
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	display: block;
+	}
+/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */
+/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */
+.leaflet-container .leaflet-overlay-pane svg,
+.leaflet-container .leaflet-marker-pane img,
+.leaflet-container .leaflet-shadow-pane img,
+.leaflet-container .leaflet-tile-pane img,
+.leaflet-container img.leaflet-image-layer,
+.leaflet-container .leaflet-tile {
+	max-width: none !important;
+	max-height: none !important;
+	}
+
+.leaflet-container.leaflet-touch-zoom {
+	-ms-touch-action: pan-x pan-y;
+	touch-action: pan-x pan-y;
+	}
+.leaflet-container.leaflet-touch-drag {
+	-ms-touch-action: pinch-zoom;
+	/* Fallback for FF which doesn't support pinch-zoom */
+	touch-action: none;
+	touch-action: pinch-zoom;
+}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.leaflet-container {
+	-webkit-tap-highlight-color: transparent;
+}
+.leaflet-container a {
+	-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+}
+.leaflet-tile {
+	filter: inherit;
+	visibility: hidden;
+	}
+.leaflet-tile-loaded {
+	visibility: inherit;
+	}
+.leaflet-zoom-box {
+	width: 0;
+	height: 0;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+	z-index: 800;
+	}
+/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+.leaflet-overlay-pane svg {
+	-moz-user-select: none;
+	}
+
+.leaflet-pane         { z-index: 400; }
+
+.leaflet-tile-pane    { z-index: 200; }
+.leaflet-overlay-pane { z-index: 400; }
+.leaflet-shadow-pane  { z-index: 500; }
+.leaflet-marker-pane  { z-index: 600; }
+.leaflet-tooltip-pane   { z-index: 650; }
+.leaflet-popup-pane   { z-index: 700; }
+
+.leaflet-map-pane canvas { z-index: 100; }
+.leaflet-map-pane svg    { z-index: 200; }
+
+.leaflet-vml-shape {
+	width: 1px;
+	height: 1px;
+	}
+.lvml {
+	behavior: url(#default#VML);
+	display: inline-block;
+	position: absolute;
+	}
+
+
+/* control positioning */
+
+.leaflet-control {
+	position: relative;
+	z-index: 800;
+	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: auto;
+	}
+.leaflet-top,
+.leaflet-bottom {
+	position: absolute;
+	z-index: 1000;
+	pointer-events: none;
+	}
+.leaflet-top {
+	top: 0;
+	}
+.leaflet-right {
+	right: 0;
+	}
+.leaflet-bottom {
+	bottom: 0;
+	}
+.leaflet-left {
+	left: 0;
+	}
+.leaflet-control {
+	float: left;
+	clear: both;
+	}
+.leaflet-right .leaflet-control {
+	float: right;
+	}
+.leaflet-top .leaflet-control {
+	margin-top: 10px;
+	}
+.leaflet-bottom .leaflet-control {
+	margin-bottom: 10px;
+	}
+.leaflet-left .leaflet-control {
+	margin-left: 10px;
+	}
+.leaflet-right .leaflet-control {
+	margin-right: 10px;
+	}
+
+
+/* zoom and fade animations */
+
+.leaflet-fade-anim .leaflet-tile {
+	will-change: opacity;
+	}
+.leaflet-fade-anim .leaflet-popup {
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	   -moz-transition: opacity 0.2s linear;
+	        transition: opacity 0.2s linear;
+	}
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+	opacity: 1;
+	}
+.leaflet-zoom-animated {
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
+	}
+.leaflet-zoom-anim .leaflet-zoom-animated {
+	will-change: transform;
+	}
+.leaflet-zoom-anim .leaflet-zoom-animated {
+	-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);
+	   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);
+	        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);
+	}
+.leaflet-zoom-anim .leaflet-tile,
+.leaflet-pan-anim .leaflet-tile {
+	-webkit-transition: none;
+	   -moz-transition: none;
+	        transition: none;
+	}
+
+.leaflet-zoom-anim .leaflet-zoom-hide {
+	visibility: hidden;
+	}
+
+
+/* cursors */
+
+.leaflet-interactive {
+	cursor: pointer;
+	}
+.leaflet-grab {
+	cursor: -webkit-grab;
+	cursor:    -moz-grab;
+	cursor:         grab;
+	}
+.leaflet-crosshair,
+.leaflet-crosshair .leaflet-interactive {
+	cursor: crosshair;
+	}
+.leaflet-popup-pane,
+.leaflet-control {
+	cursor: auto;
+	}
+.leaflet-dragging .leaflet-grab,
+.leaflet-dragging .leaflet-grab .leaflet-interactive,
+.leaflet-dragging .leaflet-marker-draggable {
+	cursor: move;
+	cursor: -webkit-grabbing;
+	cursor:    -moz-grabbing;
+	cursor:         grabbing;
+	}
+
+/* marker & overlays interactivity */
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-image-layer,
+.leaflet-pane > svg path,
+.leaflet-tile-container {
+	pointer-events: none;
+	}
+
+.leaflet-marker-icon.leaflet-interactive,
+.leaflet-image-layer.leaflet-interactive,
+.leaflet-pane > svg path.leaflet-interactive,
+svg.leaflet-image-layer.leaflet-interactive path {
+	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: auto;
+	}
+
+/* visual tweaks */
+
+.leaflet-container {
+	background: #ddd;
+	outline: 0;
+	}
+.leaflet-container a {
+	color: #0078A8;
+	}
+.leaflet-container a.leaflet-active {
+	outline: 2px solid orange;
+	}
+.leaflet-zoom-box {
+	border: 2px dotted #38f;
+	background: rgba(255,255,255,0.5);
+	}
+
+
+/* general typography */
+.leaflet-container {
+	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+
+
+/* general toolbar styles */
+
+.leaflet-bar {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+	border-radius: 4px;
+	}
+.leaflet-bar a,
+.leaflet-bar a:hover {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	}
+.leaflet-bar a,
+.leaflet-control-layers-toggle {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	}
+.leaflet-bar a:hover {
+	background-color: #f4f4f4;
+	}
+.leaflet-bar a:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	}
+.leaflet-bar a:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom: none;
+	}
+.leaflet-bar a.leaflet-disabled {
+	cursor: default;
+	background-color: #f4f4f4;
+	color: #bbb;
+	}
+
+.leaflet-touch .leaflet-bar a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	}
+.leaflet-touch .leaflet-bar a:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	}
+.leaflet-touch .leaflet-bar a:last-child {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	}
+
+/* zoom control */
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+	font: bold 18px 'Lucida Console', Monaco, monospace;
+	text-indent: 1px;
+	}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {
+	font-size: 22px;
+	}
+
+
+/* layers control */
+
+.leaflet-control-layers {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	background: #fff;
+	border-radius: 5px;
+	}
+.leaflet-control-layers-toggle {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAQAAAADQ4RFAAACf0lEQVR4AY1UM3gkARTePdvdoTxXKc+qTl3aU5U6b2Kbkz3Gtq3Zw6ziLGNPzrYx7946Tr6/ee/XeCQ4D3ykPtL5tHno4n0d/h3+xfuWHGLX81cn7r0iTNzjr7LrlxCqPtkbTQEHeqOrTy4Yyt3VCi/IOB0v7rVC7q45Q3Gr5K6jt+3Gl5nCoDD4MtO+j96Wu8atmhGqcNGHObuf8OM/x3AMx38+4Z2sPqzCxRFK2aF2e5Jol56XTLyggAMTL56XOMoS1W4pOyjUcGGQdZxU6qRh7B9Zp+PfpOFlqt0zyDZckPi1ttmIp03jX8gyJ8a/PG2yutpS/Vol7peZIbZcKBAEEheEIAgFbDkz5H6Zrkm2hVWGiXKiF4Ycw0RWKdtC16Q7qe3X4iOMxruonzegJzWaXFrU9utOSsLUmrc0YjeWYjCW4PDMADElpJSSQ0vQvA1Tm6/JlKnqFs1EGyZiFCqnRZTEJJJiKRYzVYzJck2Rm6P4iH+cmSY0YzimYa8l0EtTODFWhcMIMVqdsI2uiTvKmTisIDHJ3od5GILVhBCarCfVRmo4uTjkhrhzkiBV7SsaqS+TzrzM1qpGGUFt28pIySQHR6h7F6KSwGWm97ay+Z+ZqMcEjEWebE7wxCSQwpkhJqoZA5ivCdZDjJepuJ9IQjGGUmuXJdBFUygxVqVsxFsLMbDe8ZbDYVCGKxs+W080max1hFCarCfV+C1KATwcnvE9gRRuMP2prdbWGowm1KB1y+zwMMENkM755cJ2yPDtqhTI6ED1M/82yIDtC/4j4BijjeObflpO9I9MwXTCsSX8jWAFeHr05WoLTJ5G8IQVS/7vwR6ohirYM7f6HzYpogfS3R2OAAAAAElFTkSuQmCC);
+	width: 36px;
+	height: 36px;
+	}
+.leaflet-retina .leaflet-control-layers-toggle {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAQAAABvcdNgAAAEsklEQVR4AWL4TydIhpZK1kpWOlg0w3ZXP6D2soBtG42jeI6ZmQTHzAxiTbSJsYLjO9HhP+WOmcuhciVnmHVQcJnp7DFvScowZorad/+V/fVzMdMT2g9Cv9guXGv/7pYOrXh2U+RRR3dSd9JRx6bIFc/ekqHI29JC6pJ5ZEh1yWkhkbcFeSjxgx3L2m1cb1C7bceyxA+CNjT/Ifff+/kDk2u/w/33/IeCMOSaWZ4glosqT3DNnNZQ7Cs58/3Ce5HL78iZH/vKVIaYlqzfdLu8Vi7dnvUbEza5Idt36tquZFldl6N5Z/POLof0XLK61mZCmJSWjVF9tEjUluu74IUXvgttuVIHE7YxSkaYhJZam7yiM9Pv82JYfl9nptxZaxMJE4YSPty+vF0+Y2up9d3wwijfjZbabqm/3bZ9ecKHsiGmRflnn1MW4pjHf9oLufyn2z3y1D6n8g8TZhxyzipLNPnAUpsOiuWimg52psrTZYnOWYNDTMuWBWa0tJb4rgq1UvmutpaYEbZlwU3CLJm/ayYjHW5/h7xWLn9Hh1vepDkyf7dE7MtT5LR4e7yYpHrkhOUpEfssBLq2pPhAqoSWKUkk7EDqkmK6RrCEzqDjhNDWNE+XSMvkJRDWlZTmCW0l0PHQGRZY5t1L83kT0Y3l2SItk5JAWHl2dCOBm+fPu3fo5/3v61RMCO9Jx2EEYYhb0rmNQMX/vm7gqOEJLcXTGw3CAuRNeyaPWwjR8PRqKQ1PDA/dpv+on9Shox52WFnx0KY8onHayrJzm87i5h9xGw/tfkev0jGsQizqezUKjk12hBMKJ4kbCqGPVNXudyyrShovGw5CgxsRICxF6aRmSjlBnHRzg7Gx8fKqEubI2rahQYdR1YgDIRQO7JvQyD52hoIQx0mxa0ODtW2Iozn1le2iIRdzwWewedyZzewidueOGqlsn1MvcnQpuVwLGG3/IR1hIKxCjelIDZ8ldqWz25jWAsnldEnK0Zxro19TGVb2ffIZEsIO89EIEDvKMPrzmBOQcKQ+rroye6NgRRxqR4U8EAkz0CL6uSGOm6KQCdWjvjRiSP1BPalCRS5iQYiEIvxuBMJEWgzSoHADcVMuN7IuqqTeyUPq22qFimFtxDyBBJEwNyt6TM88blFHao/6tWWhuuOM4SAK4EI4QmFHA+SEyWlp4EQoJ13cYGzMu7yszEIBOm2rVmHUNqwAIQabISNMRstmdhNWcFLsSm+0tjJH1MdRxO5Nx0WDMhCtgD6OKgZeljJqJKc9po8juskR9XN0Y1lZ3mWjLR9JCO1jRDMd0fpYC2VnvjBSEFg7wBENc0R9HFlb0xvF1+TBEpF68d+DHR6IOWVv2BECtxo46hOFUBd/APU57WIoEwJhIi2CdpyZX0m93BZicktMj1AS9dClteUFAUNUIEygRZCtik5zSxI9MubTBH1GOiHsiLJ3OCoSZkILa9PxiN0EbvhsAo8tdAf9Seepd36lGWHmtNANTv5Jd0z4QYyeo/UEJqxKRpg5LZx6btLPsOaEmdMyxYdlc8LMaJnikDlhclqmPiQnTEpLUIZEwkRagjYkEibQErwhkTAKCLQEbUgkzJQWc/0PstHHcfEdQ+UAAAAASUVORK5CYII=);
+	background-size: 26px 26px;
+	}
+.leaflet-touch .leaflet-control-layers-toggle {
+	width: 44px;
+	height: 44px;
+	}
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+	display: none;
+	}
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+	display: block;
+	position: relative;
+	}
+.leaflet-control-layers-expanded {
+	padding: 6px 10px 6px 6px;
+	color: #333;
+	background: #fff;
+	}
+.leaflet-control-layers-scrollbar {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-right: 5px;
+	}
+.leaflet-control-layers-selector {
+	margin-top: 2px;
+	position: relative;
+	top: 1px;
+	}
+.leaflet-control-layers label {
+	display: block;
+	}
+.leaflet-control-layers-separator {
+	height: 0;
+	border-top: 1px solid #ddd;
+	margin: 5px -10px 5px -6px;
+	}
+
+/* Default icon URLs */
+.leaflet-default-icon-path {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAYAAADAk4LOAAAFgUlEQVR4Aa1XA5BjWRTN2oW17d3YaZtr2962HUzbDNpjszW24mRt28p47v7zq/bXZtrp/lWnXr337j3nPCe85NcypgSFdugCpW5YoDAMRaIMqRi6aKq5E3YqDQO3qAwjVWrD8Ncq/RBpykd8oZUb/kaJutow8r1aP9II0WmLKLIsJyv1w/kqw9Ch2MYdB++12Onxee/QMwvf4/Dk/Lfp/i4nxTXtOoQ4pW5Aj7wpici1A9erdAN2OH64x8OSP9j3Ft3b7aWkTg/Fm91siTra0f9on5sQr9INejH6CUUUpavjFNq1B+Oadhxmnfa8RfEmN8VNAsQhPqF55xHkMzz3jSmChWU6f7/XZKNH+9+hBLOHYozuKQPxyMPUKkrX/K0uWnfFaJGS1QPRtZsOPtr3NsW0uyh6NNCOkU3Yz+bXbT3I8G3xE5EXLXtCXbbqwCO9zPQYPRTZ5vIDXD7U+w7rFDEoUUf7ibHIR4y6bLVPXrz8JVZEql13trxwue/uDivd3fkWRbS6/IA2bID4uk0UpF1N8qLlbBlXs4Ee7HLTfV1j54APvODnSfOWBqtKVvjgLKzF5YdEk5ewRkGlK0i33Eofffc7HT56jD7/6U+qH3Cx7SBLNntH5YIPvODnyfIXZYRVDPqgHtLs5ABHD3YzLuespb7t79FY34DjMwrVrcTuwlT55YMPvOBnRrJ4VXTdNnYug5ucHLBjEpt30701A3Ts+HEa73u6dT3FNWwflY86eMHPk+Yu+i6pzUpRrW7SNDg5JHR4KapmM5Wv2E8Tfcb1HoqqHMHU+uWDD7zg54mz5/2BSnizi9T1Dg4QQXLToGNCkb6tb1NU+QAlGr1++eADrzhn/u8Q2YZhQVlZ5+CAOtqfbhmaUCS1ezNFVm2imDbPmPng5wmz+gwh+oHDce0eUtQ6OGDIyR0uUhUsoO3vfDmmgOezH0mZN59x7MBi++WDL1g/eEiU3avlidO671bkLfwbw5XV2P8Pzo0ydy4t2/0eu33xYSOMOD8hTf4CrBtGMSoXfPLchX+J0ruSePw3LZeK0juPJbYzrhkH0io7B3k164hiGvawhOKMLkrQLyVpZg8rHFW7E2uHOL888IBPlNZ1FPzstSJM694fWr6RwpvcJK60+0HCILTBzZLFNdtAzJaohze60T8qBzyh5ZuOg5e7uwQppofEmf2++DYvmySqGBuKaicF1blQjhuHdvCIMvp8whTTfZzI7RldpwtSzL+F1+wkdZ2TBOW2gIF88PBTzD/gpeREAMEbxnJcaJHNHrpzji0gQCS6hdkEeYt9DF/2qPcEC8RM28Hwmr3sdNyht00byAut2k3gufWNtgtOEOFGUwcXWNDbdNbpgBGxEvKkOQsxivJx33iow0Vw5S6SVTrpVq11ysA2Rp7gTfPfktc6zhtXBBC+adRLshf6sG2RfHPZ5EAc4sVZ83yCN00Fk/4kggu40ZTvIEm5g24qtU4KjBrx/BTTH8ifVASAG7gKrnWxJDcU7x8X6Ecczhm3o6YicvsLXWfh3Ch1W0k8x0nXF+0fFxgt4phz8QvypiwCCFKMqXCnqXExjq10beH+UUA7+nG6mdG/Pu0f3LgFcGrl2s0kNNjpmoJ9o4B29CMO8dMT4Q5ox8uitF6fqsrJOr8qnwNbRzv6hSnG5wP+64C7h9lp30hKNtKdWjtdkbuPA19nJ7Tz3zR/ibgARbhb4AlhavcBebmTHcFl2fvYEnW0ox9xMxKBS8btJ+KiEbq9zA4RthQXDhPa0T9TEe69gWupwc6uBUphquXgf+/FrIjweHQS4/pduMe5ERUMHUd9xv8ZR98CxkS4F2n3EUrUZ10EYNw7BWm9x1GiPssi3GgiGRDKWRYZfXlON+dfNbM+GgIwYdwAAAAASUVORK5CYII=);
+	}
+
+
+/* attribution and scale controls */
+
+.leaflet-container .leaflet-control-attribution {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.7);
+	margin: 0;
+	}
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+	padding: 0 5px;
+	color: #333;
+	}
+.leaflet-control-attribution a {
+	text-decoration: none;
+	}
+.leaflet-control-attribution a:hover {
+	text-decoration: underline;
+	}
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-scale {
+	font-size: 11px;
+	}
+.leaflet-left .leaflet-control-scale {
+	margin-left: 5px;
+	}
+.leaflet-bottom .leaflet-control-scale {
+	margin-bottom: 5px;
+	}
+.leaflet-control-scale-line {
+	border: 2px solid #777;
+	border-top: none;
+	line-height: 1.1;
+	padding: 2px 5px 1px;
+	font-size: 11px;
+	white-space: nowrap;
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
+	}
+.leaflet-control-scale-line:not(:first-child) {
+	border-top: 2px solid #777;
+	border-bottom: none;
+	margin-top: -2px;
+	}
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+	border-bottom: 2px solid #777;
+	}
+
+.leaflet-touch .leaflet-control-attribution,
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+	box-shadow: none;
+	}
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+	border: 2px solid rgba(0,0,0,0.2);
+	background-clip: padding-box;
+	}
+
+
+/* popup */
+
+.leaflet-popup {
+	position: absolute;
+	text-align: center;
+	margin-bottom: 20px;
+	}
+.leaflet-popup-content-wrapper {
+	padding: 1px;
+	text-align: left;
+	border-radius: 12px;
+	}
+.leaflet-popup-content {
+	margin: 13px 19px;
+	line-height: 1.4;
+	}
+.leaflet-popup-content p {
+	margin: 18px 0;
+	}
+.leaflet-popup-tip-container {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	overflow: hidden;
+	pointer-events: none;
+	}
+.leaflet-popup-tip {
+	width: 17px;
+	height: 17px;
+	padding: 1px;
+
+	margin: -10px auto 0;
+
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background: white;
+	color: #333;
+	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+	}
+.leaflet-container a.leaflet-popup-close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4px 4px 0 0;
+	border: none;
+	text-align: center;
+	width: 18px;
+	height: 14px;
+	font: 16px/14px Tahoma, Verdana, sans-serif;
+	color: #c3c3c3;
+	text-decoration: none;
+	font-weight: bold;
+	background: transparent;
+	}
+.leaflet-container a.leaflet-popup-close-button:hover {
+	color: #999;
+	}
+.leaflet-popup-scrolled {
+	overflow: auto;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	}
+
+.leaflet-oldie .leaflet-popup-content-wrapper {
+	zoom: 1;
+	}
+.leaflet-oldie .leaflet-popup-tip {
+	width: 24px;
+	margin: 0 auto;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
+	}
+.leaflet-oldie .leaflet-popup-tip-container {
+	margin-top: -1px;
+	}
+
+.leaflet-oldie .leaflet-control-zoom,
+.leaflet-oldie .leaflet-control-layers,
+.leaflet-oldie .leaflet-popup-content-wrapper,
+.leaflet-oldie .leaflet-popup-tip {
+	border: 1px solid #999;
+	}
+
+
+/* div icon */
+
+.leaflet-div-icon {
+	background: #fff;
+	border: 1px solid #666;
+	}
+
+
+/* Tooltip */
+/* Base styles for the element that has a tooltip */
+.leaflet-tooltip {
+	position: absolute;
+	padding: 6px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #222;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	}
+.leaflet-tooltip.leaflet-clickable {
+	cursor: pointer;
+	pointer-events: auto;
+	}
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+	position: absolute;
+	pointer-events: none;
+	border: 6px solid transparent;
+	background: transparent;
+	content: "";
+	}
+
+/* Directions */
+
+.leaflet-tooltip-bottom {
+	margin-top: 6px;
+}
+.leaflet-tooltip-top {
+	margin-top: -6px;
+}
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-top:before {
+	left: 50%;
+	margin-left: -6px;
+	}
+.leaflet-tooltip-top:before {
+	bottom: 0;
+	margin-bottom: -12px;
+	border-top-color: #fff;
+	}
+.leaflet-tooltip-bottom:before {
+	top: 0;
+	margin-top: -12px;
+	margin-left: -6px;
+	border-bottom-color: #fff;
+	}
+.leaflet-tooltip-left {
+	margin-left: -6px;
+}
+.leaflet-tooltip-right {
+	margin-left: 6px;
+}
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+	top: 50%;
+	margin-top: -6px;
+	}
+.leaflet-tooltip-left:before {
+	right: 0;
+	margin-right: -12px;
+	border-left-color: #fff;
+	}
+.leaflet-tooltip-right:before {
+	left: 0;
+	margin-left: -12px;
+	border-right-color: #fff;
+	}
+</style><script type="text/javascript" charset="utf-8" async="" src="/dist/chunk-Container-6aeab9dc6413ae134488.js"></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RC12847e8f216243748506feff56517cfb-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RCb453f6bd4b6b4056a53aa2926bf43934-source.min.js" async=""></script><script type="text/javascript">if (self != top) window.open("my URL","_top","");</script><link rel="canonical" href="https://data.worldbank.org/country/denmark" data-react-helmet="true"><link rel="alternate" href="https://datos.bancomundial.org/pais/denmark" hreflang="es" data-react-helmet="true"><link rel="alternate" href="https://donnees.banquemondiale.org/pays/denmark" hreflang="fr" data-react-helmet="true"><link rel="alternate" href="https://data.albankaldawli.org/country/denmark" hreflang="ar" data-react-helmet="true"><link rel="alternate" href="https://data.worldbank.org.cn/country/denmark" hreflang="zh" data-react-helmet="true"><meta name="description" content="Denmark from The World Bank: Data" data-react-helmet="true"><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RC2e3636800ddb470a8bd9e4c1c20acdfd-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RC7b66513f348242d8a803f534ea2d78a8-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RC92fd33c7fb334edab38329a750ca1b66-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RCf2a918b6a3814e33b071041595a61b01-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RCbb4e9702bffe4ffbb6fad9ee3d3a2be8-source.min.js" async=""></script><script src="https://assets.adobedtm.com/223f6e2cf7c9/3eb6c9b72a93/435b9a374f35/RC7c8bc1a1fe3f4befbe1788c53326d752-source.min.js" async=""></script></head><body data-reactid="36"><span style="padding-top:15px;" data-reactid="37"><!--[if lte IE 9]><p>It seems you are using an older browser. This site is optimized for modern browsers. Please upgrade to a modern browser for the best experience.<![endif]--></span><div id="app" data-reactid="38"><div class="" data-reactroot="" data-reactid="1"><div data-reactid="2"><div class="" data-reactid="3"><div class="" style="opacity:1;-webkit-transition:0.4s opacity;transition:0.4s opacity;-webkit-transition-delay:0s;transition-delay:0s;" data-reactid="4"><div class="" style="display:none;position:fixed;top:0;left:0;width:40%;max-width:100% !important;height:2px;box-shadow:1px 1px 1px rgba(0,0,0,0.4);border-radius:0 1px 1px 0;-webkit-transition:0.4s width, 0.4s background-color;transition:0.4s width, 0.4s background-color;background-color:#0071BC;" data-reactid="5"></div></div><header class="border-bottom" id="header" data-reactid="6"><div class="wrapper" data-reactid="7"><div data-reactid="8"><a class="logo" href="http://www.worldbank.org" target="_blank" data-reactid="9"><img alt="The World Bank" src="/assets/images/logo-wb-header-en.svg" data-reactid="10"></a><a class="datalink" href="/" data-reactid="11">Data</a></div><div class="tail-container" data-reactid="12"><div class="tab-switcher-container" data-reactid="13"><div class="tab-switcher-item-container " data-reactid="14"><a href="/" data-reactid="15">HOME</a></div><div class="tab-switcher-item-container " data-reactid="16"><a href="https://data360.worldbank.org/en/economies" target="_blank" rel="noopener noreferrer" data-reactid="17">ECONOMIES</a></div><div class="tab-switcher-item-container " data-reactid="18"><a class="tab-switcher-1 tab-switcher-themes " href="#" data-reactid="19">THEMES</a></div><div class="tab-switcher-item-container " data-reactid="20"><a href="https://data360.worldbank.org/en/search" target="_blank" rel="noopener noreferrer" data-reactid="21">DATA &amp; RESOURCES</a></div><div class="tab-switcher-item-container " data-reactid="22"><a href="https://data360.worldbank.org/en/about" target="_blank" rel="noopener noreferrer" data-reactid="23">ABOUT</a></div></div><select class="dropdown" data-reactid="24"><option value="https://data.worldbank.org/country/denmark" data-reactid="25">English</option><option value="https://datos.bancomundial.org/pais/dinamarca" data-reactid="26">Español</option><option value="https://donnees.banquemondiale.org/pays/danemark" data-reactid="27">Français</option><option value="https://data.albankaldawli.org/country/denmark" data-reactid="28">العربية</option><option value="https://data.worldbank.org.cn/country/denmark" data-reactid="29">中文</option></select></div></div></header><div data-reactid="30"><nav id="nav" class="" data-reactid="31"><div class="wrapper" data-reactid="32"><div class="search" data-reactid="33"><div class="multiSelector-container " data-reactid="34"><div class="search-bar multiSelector show-hint-button" data-reactid="35"><div style="display:flex;position:absolute;top:0px;left:0px;padding:5px;padding-left:10px;" data-reactid="36"><button class="search-hints-button" data-reactid="37"><span data-reactid="38">&nbsp;</span></button></div><div class="selector-box" data-reactid="39"><div class="scroll-box" data-reactid="40"><span class="location" data-reactid="41"><!-- react-text: 42 -->Denmark<!-- /react-text --><button data-reactid="43"></button></span><input type="text" autocapitalize="off" autocomplete="off" autocorrect="off" id="selector" placeholder="" spellcheck="false" tabindex="0" value="" class="" data-reactid="44"></div></div><button class="clear" data-reactid="45"></button><button class="" data-reactid="46"></button><div class="dropdownBox show-hint-button" data-reactid="47"><div class="control" data-reactid="48"><button class="close button secondary" data-reactid="49">Close</button></div><p data-reactid="50"><span data-reactid="51">Browse World Development Indicators by</span><a class="country" href="/country" data-reactid="52"><span data-reactid="53">Country</span></a><span data-reactid="54">or</span><a href="/indicator" data-reactid="55"><span data-reactid="56">Indicator</span></a></p></div></div></div></div><nav class="links" data-reactid="57"><a class="nav-item datapage" href="/" data-reactid="58"></a><a class="nav-item" href="http://databank.worldbank.org/data/home.aspx" target="false" data-reactid="59">DataBank</a><a class="nav-item" href="http://microdata.worldbank.org/index.php/home" target="false" data-reactid="60">Microdata</a><a class="nav-item" href="https://datacatalog.worldbank.org" target="_self" data-reactid="61">Data Catalog</a><div class="megamenu" data-reactid="62"><button class="menu" id="navBarMenu" data-reactid="63"><span data-reactid="64">Menu</span></button><div class="menuContainer" data-reactid="65"><div class="box" data-reactid="66"><ul class="featured" data-reactid="67"><li data-reactid="68"><a href="http://microdata.worldbank.org/index.php/home" target="_blank" data-reactid="69">Microdata</a></li><li data-reactid="70"><a href="http://datacatalog.worldbank.org" target="_blank" data-reactid="71">Data Catalog</a></li><li data-reactid="72"><a href="http://databank.worldbank.org/data/home.aspx" target="_blank" data-reactid="73"><span data-reactid="74">DataBank</span></a></li></ul><div class="wrapper " data-reactid="75"><div class="dropdownBox" data-reactid="76"><span data-reactid="77">Browse World Development Indicators by</span><a class="country" href="/country" data-reactid="78"><span data-reactid="79">Country</span></a><a href="/indicator" data-reactid="80"><span data-reactid="81">Indicator</span></a></div><div class="colGroup" data-reactid="82"><ul class="col" data-reactid="83"><li class="hasItem" data-reactid="84"><a href="/about" data-reactid="85">About Us</a><ul data-reactid="86"><li data-reactid="87"><a href="/about/get-started" data-reactid="88">Get Started</a></li><li data-reactid="89"><a href="/about/faq" data-reactid="90">FAQ</a></li><li data-reactid="91"><a href="http://datahelpdesk.worldbank.org" data-reactid="92">Help Desk</a></li><li data-reactid="93"><a href="/about/contact" data-reactid="94">Contact</a></li></ul></li></ul><ul class="col" data-reactid="95"><li class="hasItem" data-reactid="96"><a href="/about/data-programs" data-reactid="97">Data Programs</a><ul data-reactid="98"><li data-reactid="99"><a href="/about/data-programs#statcap" data-reactid="100">Improving Statistical Capacity</a></li><li data-reactid="101"><a href="https://www.worldbank.org/en/programs/global-data-facility" data-reactid="102">Global Data Facility</a></li><li data-reactid="103"><a href="/about/data-programs#icp" data-reactid="104">International Comparison Program &amp; Purchasing Power Parity</a></li><li data-reactid="105"><a href="/about/data-programs#ihsn" data-reactid="106">International Household Survey Network (IHSN)</a></li><li data-reactid="107"><a href="/about/data-programs#jedh" data-reactid="108">Joint External Debt Hub</a></li><li data-reactid="109"><a href="/about/data-programs#ogd-toolkit" data-reactid="110">Open Data Toolkit</a></li><li data-reactid="111"><a href="/about/data-programs#qeds" data-reactid="112">Quarterly External Debt Statistics</a></li></ul></li></ul><ul class="col" data-reactid="113"><li class="hasItem" data-reactid="114"><a href="/products" data-reactid="115">Products</a><ul data-reactid="116"><li data-reactid="117"><a href="http://datatopics.worldbank.org/world-development-indicators" data-reactid="118">World Development Indicators</a></li><li data-reactid="119"><a href="https://www.worldbank.org/en/programs/debt-statistics/ids/products" data-reactid="120">International Debt Statistics</a></li><li data-reactid="121"><a href="/products/data-books" data-reactid="122">Other Books and Reports</a></li><li data-reactid="123"><a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/906519" data-reactid="124">Country &amp; Lending Groups</a></li><li data-reactid="125"><a href="/products/tools" data-reactid="126">Data Portals and Tools</a></li></ul></li></ul><ul class="col" data-reactid="127"><li data-reactid="128"><a href="http://datatopics.worldbank.org/sdgs" data-reactid="129">Development Goals</a></li><li data-reactid="130"><a href="/summary-terms-of-use" data-reactid="131">Terms of Use</a></li><li data-reactid="132"><a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889386" data-reactid="133">For Developers</a></li></ul></div></div></div></div></div></nav></div></nav></div><div class="wrapper" id="main" data-reactid="134"><!-- react-empty: 135 --><div data-reactid="136"><div id="wdi" data-reactid="137"><!-- react-empty: 138 --><article class="card indicator" data-reactid="139"><div class="cardheader" data-reactid="140"><h1 data-reactid="141"><!-- react-text: 142 -->Denmark<!-- /react-text --><!-- react-text: 143 -->&nbsp;<!-- /react-text --><a class="info-b" data-reactid="144"></a></h1><div class="jump-to" data-reactid="145"><button data-reactid="146"><span data-reactid="147">Jump to</span></button><ul class="undefined list" style="display:none;" data-reactid="148"><li data-reactid="149"><span data-reactid="150">Projects &amp; Operations</span></li><li data-reactid="151"><span data-reactid="152">Finances</span></li><li data-reactid="153"><span data-reactid="154">Surveys</span></li><li data-reactid="155"><span data-reactid="156">Human Capital Index</span></li><li data-reactid="157"><span data-reactid="158">Climate</span></li></ul></div></div><div class="locationcard-wrap-sticky-helper" data-reactid="159"><section class="body locationcard" data-reactid="160"><div class="tabbed" data-tabs="true" data-reactid="161"><ul class="react-tabs__tab-list" role="tablist" data-reactid="162"><li class="react-tabs__tab react-tabs__tab--selected" role="tab" id="react-tabs-0" aria-selected="true" aria-disabled="false" aria-controls="react-tabs-1" tabindex="0" data-reactid="163"><span data-reactid="164">Overview</span></li><li class="react-tabs__tab" role="tab" id="react-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-3" data-reactid="165"><span data-reactid="166">By Theme</span></li><li class="react-tabs__tab" role="tab" id="react-tabs-4" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-5" data-reactid="167"><span data-reactid="168">By SDG Goal</span></li></ul><div style="z-index: 9999; position: sticky; top: 0px;" data-reactid="169"><div data-reactid="170"><div class="accordion-wrap" data-reactid="171"><div class="accordion-trigger accordion-trigger--is-closed" data-reactid="172"><span data-reactid="173">Topic</span></div><div class="Collapsible" data-reactid="174"><span class="Collapsible__trigger is-closed" data-reactid="175"></span><div class="Collapsible__contentOuter" style="height:0;-webkit-transition:height 100ms linear;-ms-transition:height 100ms linear;transition:height 100ms linear;overflow:hidden;" data-reactid="176"><div class="Collapsible__contentInner" data-reactid="177"><ul class="accordion-list" data-reactid="178"><li data-reactid="179"><a href="#Social" data-reactid="180"><span data-reactid="181">Social</span></a></li><li data-reactid="182"><a href="#Economic" data-reactid="183"><span data-reactid="184">Economic</span></a></li><li data-reactid="185"><a href="#Environment" data-reactid="186"><span data-reactid="187">Environment</span></a></li><li data-reactid="188"><a href="#Institutions" data-reactid="189"><span data-reactid="190">Institutions</span></a></li></ul></div></div></div></div></div></div><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="react-tabs-1" aria-labelledby="react-tabs-0" data-reactid="191"><div data-reactid="192"><div class="indicator-item" id="0" data-reactid="193"><h2 data-reactid="194"><span data-reactid="195">Social</span></h2><div class="indicator-status-bar" data-reactid="196"><div data-reactid="197"><span data-reactid="198">Indicator</span></div><div data-reactid="199"><span data-reactid="200">Most recent value</span></div><div data-reactid="201"><span data-reactid="202">Trend</span></div></div><div class="indicator-item__wrapper" style="z-index:5;" data-reactid="203"><div class="indicator-item__inner" data-reactid="204"><div class="indicator-item__headline-mobile" data-reactid="205"><a href="/indicator/SP.DYN.LE00.IN?locations=DK" data-reactid="206">Life expectancy at birth, total (years)</a></div><div class="indicator-item__col indicator-item__col--flex" data-reactid="207"><div class="indicator-item__title" data-reactid="208"><a href="/indicator/SP.DYN.LE00.IN?locations=DK" data-reactid="209">Life expectancy at birth, total (years)</a><a class="info-b openinnew" data-reactid="210"></a></div></div><div class="indicator-item__col indicator-item__col--middle" data-reactid="211"><div class="indicator-item__data-inner-col-wrapper" data-reactid="212"><div class="indicator-item__mobile-above-info" data-reactid="213"><div class="indicator-item__mobile-above-info-inner" data-reactid="214"><span data-reactid="215">Most recent value</span></div><div class="indicator-item__mobile-above-info-year" data-reactid="216"><p data-reactid="217"><!-- react-text: 218 -->(<!-- /react-text --><!-- react-text: 219 -->2024<!-- /react-text --><!-- react-text: 220 -->)<!-- /react-text --></p><a class="info-b openinnew" data-reactid="221"></a></div></div><div class="indicator-item__data-info" data-reactid="222"><span data-reactid="223">82</span></div><p class="indicator-item__data-info-year" data-reactid="224"><!-- react-text: 225 -->(<!-- /react-text --><!-- react-text: 226 -->2024<!-- /react-text --><!-- react-text: 227 -->)<!-- /react-text --></p></div></div><div class="indicator-item__col indicator-item__col--last" data-reactid="228"><div class="indicator-item__chart-title-mob" data-reactid="229"><span data-reactid="230">Trend</span></div><div class="chart view indicator-item__chart" data-reactid="231"><div class="indicator-item__chart-inner-wrap" data-reactid="232"><img class="placeholder" src="/assets/images/placeholder.png" data-reactid="233"><div class="d3-chart" data-reactid="234"><svg width="100%" height="109" class="line-chart"><g transform="translate(30, 5)"><g class="bg"></g><g class="x axis" transform="translate(0, 76)"><text class="axis-label" text-anchor="left" x="-33" y="-15"></text><rect x="0" y="-3" width="132" height="1" fill="#6C6F73" opacity="0.25"></rect><g class="tick" transform="translate(3,0)" style="opacity: 1;"><line y2="4" x2="0"></line><text dy=".71em" y="10" x="0" style="text-anchor: middle;">2000</text></g><g class="tick" transform="translate(142,0)" style="opacity: 1;"><line y2="4" x2="0"></line><text dy=".71em" y="10" x="0" style="text-anchor: middle;">2025</text></g><path class="domain" d="M-30,0L152,0Z"></path><rect x="0" y="-3" width="142" height="1" fill="#6C6F73" opacity="0.25"></rect></g><g class="y axis"><text class="axis-label" text-anchor="middle" x="-33" y="-15" transform="translate(-8, 3)rotate(-90)" font-weight="bold" dy="3"> </text><rect x="0" y="0" width="1" height="74" fill="#6C6F73" opacity="0.25"></rect><g class="tick" transform="translate(0,74)" style="opacity: 1;"><line x2="182" y2="0" x1="-2" display="none"></line><text dy="3" x="-10" y="0" style="text-anchor: end;">76</text></g><g class="tick" transform="translate(0,0)" style="opacity: 1;"><line x2="182" y2="0" x1="-2" display="none"></line><text dy="3" x="-10" y="0" style="text-anchor: end;">83</text></g><path class="domain" d="M182,0H0V74H182"></path><rect x="0" y="0" width="1" height="74" fill="#6C6F73" opacity="0.25"></rect></g><g class="lines"><g class="line selected"><path class="path" d="M3,67.73449477351886L8.559999999999999,65.6202090592331L14.12,64.53728222996534L19.68,61.90731707317062L25.24,58.22020905923308L30.800000000000004,54.50731707317058L36.36,51.85156794425103L41.92,50.79442508710809L47.48,48.13867595818854L53.04,46.54006968641073L58.6,41.228571428571485L64.16,33.82857142857146L69.72,31.17282229965176L75.28,28.542857142857173L80.84,24.314285714285685L86.4,24.288501742160722L91.96,22.689895470382915L97.52,20.059930313588183L103.08,21.63275261324012L108.64,16.37282229965185L114.2,14.7742160278739L119.76,16.862717770034685L125.32,17.919860627177627L130.88000000000002,13.175609756097145L136.44,7.8898954703828625" stroke="#2B7CB5"></path><circle class="point" r="2.5" cx="3" cy="67.73449477351886" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="8.559999999999999" cy="65.6202090592331" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="14.12" cy="64.53728222996534" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="19.68" cy="61.90731707317062" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="25.24" cy="58.22020905923308" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="30.800000000000004" cy="54.50731707317058" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="36.36" cy="51.85156794425103" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="41.92" cy="50.79442508710809" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="47.48" cy="48.13867595818854" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="53.04" cy="46.54006968641073" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="58.6" cy="41.228571428571485" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="64.16" cy="33.82857142857146" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="69.72" cy="31.17282229965176" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="75.28" cy="28.542857142857173" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="80.84" cy="24.314285714285685" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="86.4" cy="24.288501742160722" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="91.96" cy="22.689895470382915" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="97.52" cy="20.059930313588183" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="103.08" cy="21.63275261324012" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="108.64" cy="16.37282229965185" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="114.2" cy="14.7742160278739" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="119.76" cy="16.862717770034685" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="125.32" cy="17.919860627177627" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="130.88000000000002" cy="13.175609756097145" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="136.44" cy="7.8898954703828625" fill="#2B7CB5"></circle></g></g><g class="labels"><g class="label" transform="translate(88, 12.889895470382863)"><rect height="20" width="59" fill="#D2E4F0" stroke="#73A9D0"></rect><text text-anchor="middle" dy="14" dx="29.5" fill="#2B7CB5">Denmark</text></g></g><g class="voronoi"><path d="M19.446657331047636,104L17.81629290865522,98.32954502030248L-21.47655069256681,-5L-30,-5L-30,104Z"></path><path d="M-21.47655069256681,-5L17.81629290865522,98.32954502030248L6.833309198123266,41.94034294984255L3.1743255730977396,30.98179691341494L-12.454198728804368,-4.2457416481697905L-12.831086840494436,-5Z"></path><path d="M6.833309198123266,41.94034294984255L17.81629290865522,98.32954502030248L19.446657331047636,104L36.1884757365975,104Z"></path><path d="M3.1743255730977396,30.98179691341494L6.833309198123266,41.94034294984255L36.1884757365975,104L51.59626815334464,104Z"></path><path d="M-12.454198728804368,-4.2457416481697905L3.1743255730977396,30.98179691341494L51.59626815334464,104L55.613691459141016,104L47.179418525838884,85.05470445578818Z"></path><path d="M-12.831086840494436,-5L-12.454198728804368,-4.2457416481697905L47.179418525838884,85.05470445578818L43.40316572107539,73.74494074896073L5.790432330947397,-4.999999999999986Z"></path><path d="M5.790432330947397,-4.999999999999986L43.40316572107539,73.74494074896073L34.876834278924605,28.90105225103927L28.137324535192512,8.7164230320098L19.244840680636983,-5.000000000000002Z"></path><path d="M34.876834278924605,28.90105225103927L43.40316572107539,73.74494074896073L47.179418525838884,85.05470445578818L55.613691459141016,104L68.6495298796886,104L60.20427083003264,81.92584760035909Z"></path><path d="M28.137324535192512,8.7164230320098L34.876834278924605,28.90105225103927L60.20427083003264,81.92584760035909L46.4450078233462,34.070714867730274L37.39535646967551,19.507676671810238Z"></path><path d="M46.4450078233462,34.070714867730274L60.20427083003264,81.92584760035909L68.6495298796886,104L112.85935874054866,104L112.43566227778281,103.14877339069467Z"></path><path d="M37.39535646967551,19.507676671810238L46.4450078233462,34.070714867730274L112.43566227778281,103.14877339069467L104.71826808662371,85.63127585000733L101.43134180051189,80.23716849696712L87.93798076000307,62.495221756272244L73.79833028292056,46.859100239599776Z"></path><path d="M19.244840680636983,-5.000000000000002L28.137324535192512,8.7164230320098L37.39535646967551,19.507676671810238L73.79833028292056,46.859100239599776L49.02769114583124,-5Z"></path><path d="M49.02769114583124,-5L73.79833028292056,46.859100239599776L87.93798076000307,62.495221756272244L59.06219587087041,1.449023809311921L55.084600370778425,-5Z"></path><path d="M59.06219587087041,1.449023809311921L87.93798076000307,62.495221756272244L101.43134180051189,80.23716849696712L83.66403558344771,33.79712173694039Z"></path><path d="M55.084600370778425,-5L59.06219587087041,1.449023809311921L83.66403558344771,33.79712173694039L83.52502417180082,3.8210339012040357L82.23646229412,-5Z"></path><path d="M83.52502417180082,3.8210339012040357L83.66403558344771,33.79712173694039L101.43134180051189,80.23716849696712L104.71826808662371,85.63127585000733L101.82834568521304,67.48049968270757Z"></path><path d="M82.23646229412,-5L83.52502417180082,3.8210339012040357L101.82834568521304,67.48049968270757L98.12569654012223,28.532601960916658L82.26426317390961,-5Z"></path><path d="M82.26426317390961,-5L98.12569654012223,28.532601960916658L101.98131205186378,14.902827825312745L95.38204265462159,-5Z"></path><path d="M98.12569654012223,28.532601960916658L101.82834568521304,67.48049968270757L104.71826808662371,85.63127585000733L112.43566227778281,103.14877339069467L112.85935874054866,104L128.26085773157175,104L117.88720761839939,41.862459097395394L113.72850144941273,27.320171902710758L101.98131205186378,14.902827825312745Z"></path><path d="M95.38204265462159,-5L101.98131205186378,14.902827825312745L113.72850144941273,27.320171902710758L113.87052131631538,24.09650622681731L105.50472105854062,-4.9999999999999964Z"></path><path d="M105.50472105854062,-4.9999999999999964L113.87052131631538,24.09650622681731L121.55053997978244,3.6507974035186663L120.92639141687715,-2.8616253130608733L120.26446435918095,-5Z"></path><path d="M113.72850144941273,27.320171902710758L117.88720761839939,41.862459097395394L123.83980443068891,10.555021715385818L121.55053997978244,3.6507974035186663L113.87052131631538,24.09650622681731Z"></path><path d="M117.88720761839939,41.862459097395394L128.26085773157175,104L152,104L152,43.557214762374606L123.83980443068891,10.555021715385818Z"></path><path d="M120.92639141687715,-2.8616253130608733L121.55053997978244,3.6507974035186663L123.83980443068891,10.555021715385818L152,43.557214762374606L152,29.824447190311535Z"></path><path d="M120.26446435918095,-5L120.92639141687715,-2.8616253130608733L152,29.824447190311535L152,-5Z"></path></g></g></svg><div class="tooltips"></div><div class="no-data" style="display: none;"></div></div></div></div></div></div></div><div class="indicator-item__wrapper" style="z-index:4;" data-reactid="235"><div class="indicator-item__inner" data-reactid="236"><div class="indicator-item__headline-mobile" data-reactid="237"><a href="/indicator/SI.POV.DDAY?locations=DK" data-reactid="238">Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</a></div><div class="indicator-item__col indicator-item__col--flex" data-reactid="239"><div class="indicator-item__title" data-reactid="240"><a href="/indicator/SI.POV.DDAY?locations=DK" data-reactid="241">Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</a><a class="info-b openinnew" data-reactid="242"></a></div></div><div class="indicator-item__col indicator-item__col--middle" data-reactid="243"><div class="indicator-item__data-inner-col-wrapper" data-reactid="244"><div class="indicator-item__mobile-above-info" data-reactid="245"><div class="indicator-item__mobile-above-info-inner" data-reactid="246"><span data-reactid="247">Most recent value</span></div><div class="indicator-item__mobile-above-info-year" data-reactid="248"><p data-reactid="249"><!-- react-text: 250 -->(<!-- /react-text --><!-- react-text: 251 -->2023<!-- /react-text --><!-- react-text: 252 -->)<!-- /react-text --></p><a class="info-b openinnew" data-reactid="253"></a></div></div><div class="indicator-item__data-info" data-reactid="254"><span data-reactid="255">0.4</span></div><p class="indicator-item__data-info-year" data-reactid="256"><!-- react-text: 257 -->(<!-- /react-text --><!-- react-text: 258 -->2023<!-- /react-text --><!-- react-text: 259 -->)<!-- /react-text --></p></div></div><div class="indicator-item__col indicator-item__col--last" data-reactid="260"><div class="indicator-item__chart-title-mob" data-reactid="261"><span data-reactid="262">Trend</span></div><div class="chart view indicator-item__chart" data-reactid="263"><div class="indicator-item__chart-inner-wrap" data-reactid="264"><img class="placeholder" src="/assets/images/placeholder.png" data-reactid="265"><div class="d3-chart" data-reactid="266"><svg width="100%" height="109" class="line-chart"><g transform="translate(30, 5)"><g class="bg"></g><g class="x axis" transform="translate(0, 76)"><text class="axis-label" text-anchor="left" x="-33" y="-15"></text><rect x="0" y="-3" width="132" height="1" fill="#6C6F73" opacity="0.25"></rect><g class="tick" transform="translate(3,0)" style="opacity: 1;"><line y2="4" x2="0"></line><text dy=".71em" y="10" x="0" style="text-anchor: middle;">2000</text></g><g class="tick" transform="translate(142,0)" style="opacity: 1;"><line y2="4" x2="0"></line><text dy=".71em" y="10" x="0" style="text-anchor: middle;">2025</text></g><path class="domain" d="M-30,0L152,0Z"></path><rect x="0" y="-3" width="142" height="1" fill="#6C6F73" opacity="0.25"></rect></g><g class="y axis"><text class="axis-label" text-anchor="middle" x="-33" y="-15" transform="translate(-8, 3)rotate(-90)" font-weight="bold" dy="3"> </text><rect x="0" y="0" width="1" height="74" fill="#6C6F73" opacity="0.25"></rect><g class="tick zero" transform="translate(0,74)" style="opacity: 1;"><line x2="182" y2="0" x1="-2" display="none"></line><text dy="3" x="-10" y="0" style="text-anchor: end;">0</text></g><g class="tick" transform="translate(0,0)" style="opacity: 1;"><line x2="182" y2="0" x1="-2" display="none"></line><text dy="3" x="-10" y="0" style="text-anchor: end;">1</text></g><path class="domain" d="M182,0H0V74H182"></path><rect x="0" y="0" width="1" height="74" fill="#6C6F73" opacity="0.25"></rect></g><g class="lines"><g class="line selected"><path class="path" d="M3,66.60000000000001L19.68,44.4L25.24,51.8L30.800000000000004,51.8L36.36,59.2L41.92,66.60000000000001L47.48,51.8L53.04,29.6L58.6,66.60000000000001L64.16,74L69.72,74L75.28,51.8L80.84,59.2L86.4,59.2L91.96,51.8L97.52,66.60000000000001L103.08,59.2L108.64,51.8L114.2,59.2L119.76,59.2L125.32,59.2L130.88000000000002,44.4" stroke="#2B7CB5" stroke-dasharray="0,27,239"></path><circle class="point edge-point" r="2.5" cx="3" cy="66.60000000000001" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="19.68" cy="44.4" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="25.24" cy="51.8" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="30.800000000000004" cy="51.8" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="36.36" cy="59.2" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="41.92" cy="66.60000000000001" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="47.48" cy="51.8" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="53.04" cy="29.6" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="58.6" cy="66.60000000000001" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="64.16" cy="74" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="69.72" cy="74" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="75.28" cy="51.8" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="80.84" cy="59.2" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="86.4" cy="59.2" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="91.96" cy="51.8" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="97.52" cy="66.60000000000001" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="103.08" cy="59.2" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="108.64" cy="51.8" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="114.2" cy="59.2" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="119.76" cy="59.2" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="125.32" cy="59.2" fill="#2B7CB5"></circle><circle class="point" r="2.5" cx="130.88000000000002" cy="44.4" fill="#2B7CB5"></circle></g></g><g class="labels"><g class="label" transform="translate(88, 19.4)"><rect height="20" width="59" fill="#D2E4F0" stroke="#73A9D0"></rect><text text-anchor="middle" dy="14" dx="29.5" fill="#2B7CB5">Denmark</text></g></g><g class="voronoi"><path d="M22.459999999999997,104L22.459999999999997,75.43254054054053L21.22888489208633,69.88254054054053L11.975539568345326,55.977513513513514L-30,24.43913513513513L-30,104Z"></path><path d="M-30,24.43913513513513L11.975539568345326,55.977513513513514L28.019999999999996,43.922486486486484L34.866676258992804,33.63396756756757L17.726906474820144,-5L-30,-5Z"></path><path d="M11.975539568345326,55.977513513513514L21.22888489208633,69.88254054054053L28.019999999999996,59.67751351351351L28.019999999999996,43.922486486486484Z"></path><path d="M28.019999999999996,43.922486486486484L28.019999999999996,59.67751351351351L39.14,51.32248648648648L39.13999999999999,37.91499099099099L34.866676258992804,33.63396756756757Z"></path><path d="M21.22888489208633,69.88254054054053L22.459999999999997,75.43254054054053L44.27630695443645,59.04082882882883L39.14,51.32248648648648L28.019999999999996,59.67751351351351Z"></path><path d="M22.459999999999997,75.43254054054053L22.459999999999997,104L41.82687050359711,104L50.25999999999999,78.65502702702702L50.26,61.288756756756754L44.27630695443645,59.04082882882883Z"></path><path d="M39.13999999999999,37.91499099099099L39.14,51.32248648648648L44.27630695443645,59.04082882882883L50.26,61.288756756756754L61.379999999999995,52.93372972972972L61.379999999999995,43.485009009009005Z"></path><path d="M17.726906474820144,-5L34.866676258992804,33.63396756756757L39.13999999999999,37.91499099099099L61.379999999999995,43.485009009009005L83.61999999999999,21.20493693693694L98.56731757451182,-5Z"></path><path d="M50.26,61.288756756756754L50.25999999999999,78.65502702702702L66.94,66.12248648648648L69.50815347721823,62.26331531531531L69.41821582733813,61.99301621621622L61.379999999999995,52.93372972972972Z"></path><path d="M66.94,104L66.94,66.12248648648648L50.25999999999999,78.65502702702702L41.82687050359711,104Z"></path><path d="M66.94,66.12248648648648L66.94,104L92.59050359712232,104L84.59586844809866,73.96610038610038L83.62,72.86627027027026L69.50815347721823,62.26331531531531Z"></path><path d="M61.379999999999995,43.485009009009005L61.379999999999995,52.93372972972972L69.41821582733813,61.99301621621622L83.62,51.32248648648648L83.61999999999999,21.20493693693694Z"></path><path d="M69.41821582733813,61.99301621621622L69.50815347721823,62.26331531531531L83.62,72.86627027027026L83.62,51.32248648648648Z"></path><path d="M83.62,51.32248648648648L83.62,72.86627027027026L84.59586844809866,73.96610038610038L94.31630695443644,59.35917117117117Z"></path><path d="M83.61999999999999,21.20493693693694L83.62,51.32248648648648L94.31630695443644,59.35917117117117L95.16369304556355,59.04082882882882L100.3,51.322486486486476L100.30000000000001,-5L98.56731757451182,-5Z"></path><path d="M84.59586844809866,73.96610038610038L92.59050359712232,104L122.31535971223022,104L116.97999999999999,87.96508108108107L108.63999999999999,69.16627027027026L95.16369304556355,59.04082882882882L94.31630695443644,59.35917117117117Z"></path><path d="M95.16369304556355,59.04082882882882L108.63999999999999,69.16627027027026L108.64,57.58875675675675L100.3,51.322486486486476Z"></path><path d="M100.30000000000001,-5L100.3,51.322486486486476L108.64,57.58875675675675L116.97999999999999,51.3224864864865L119.54815347721822,47.46331531531531L102.09183453237411,-5Z"></path><path d="M108.64,57.58875675675675L108.63999999999999,69.16627027027026L116.97999999999999,87.96508108108107L116.97999999999999,51.3224864864865Z"></path><path d="M116.97999999999999,51.3224864864865L116.97999999999999,87.96508108108107L122.31535971223022,104L122.53999999999999,104L122.53999999999999,49.71124324324324L119.54815347721822,47.46331531531531Z"></path><path d="M122.53999999999999,49.71124324324324L122.53999999999999,104L152,104L152,60.778648648648655Z"></path><path d="M102.09183453237411,-5L119.54815347721822,47.46331531531531L122.53999999999999,49.71124324324324L152,60.778648648648655L152,-5Z"></path></g></g></svg><div class="tooltips"></div><div class="no-data" style="display: none;"></div></div></div></div></div></div></div><div class="indicator-item__wrapper" style="z-index:3;" data-reactid="267"><div class="indicator-item__inner" data-reactid="268"><div class="indicator-item__headline-mobile" data-reactid="269"><a href="/indicator/SP.POP.TOTL?locations=DK" data-reactid="270">Population, total</a></div><div class="indicator-item__col indicator-item__col--flex" data-reactid="271"><div class="indicator-item__title" data-reactid="272"><a href="/indicator/SP.POP.TOTL?locations=DK" data-reactid="273">Population, total</a><a class="info-b openinnew" data-reactid="274"></a></div></div><div class="indicator-item__col indicator-item__col--middle" data-reactid="275"><div class="indicator-item__data-inner-col-wrapper" data-reactid="276"><div class="indicator-item__mobile-above-info" data-reactid="277"><div class="indicator-item__mobile-above-info-inner" data-reactid="278"><span data-reactid="279">Most recent value</span></div><div class="indicator-item__mobile-above-info-year" data-reactid="280"><p data-reactid="281"><!-- react-text: 282 -->(<!-- /react-text --><!-- react-text: 283 -->2025<!-- /react-text --><!-- react-text: 284 -->)<!-- /react-text --></p><a class="info-b openinnew" data-reactid="285"></a></div></div><div class="indicator-item__data-info" data-reactid="286"><span data-reactid="287">6,009,169</span></div><p class="indicator-item__data-info-year" data-reactid="288"><!-- react-text: 289 -->(<!-- /react-text --><!-- react-text: 290 -->2025<!-- /react-text --><!-- react-text: 291 -->)<!-- /react-text --></p></div></div><div class="indicator-item__col indicator-item__col--last" data-reactid="292"><div class="indicator-item__chart-title-m

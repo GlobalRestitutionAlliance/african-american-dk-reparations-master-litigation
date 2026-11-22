@@ -1,0 +1,15 @@
+{
+  "url": "https://data.worldbank.org/country/denmark",
+  "final_url": "https://data.worldbank.org/country/denmark",
+  "title": "World Bank Denmark",
+  "fetched_at": "2026-11-22T21:09:02.704760Z",
+  "http_status": "unknown_browser_outerhtml_capture",
+  "status_note": "Browser outerHTML capture; HTTP status not captured by eval fallback. Do not treat as authenticated or verified.",
+  "content_type": "text/html; browser-rendered",
+  "bytes": 60013,
+  "sha256": "7d4b641ae2d59423133b68a22ab98d5808c64e5477f8bd4a3878bd6b2111fdc9",
+  "provenance": "browser-rendered-outerHTML",
+  "custodian": "OpenCode/browser-fallback",
+  "legal_review_status": "PENDING_LEGAL_REVIEW",
+  "capture_method": "opencode-browse-extension+eval.outerHTML"
+}
