@@ -1,0 +1,7 @@
+iso,country,source_type,title,url,access_class,status
+DK,Denmark,PUBLIC_PORTAL,Danish National Archives,https://www.rigsarkivet.dk/,PUBLIC_PORTAL,VERIFY_AND_DOWNLOAD
+DK,Denmark,PUBLIC_PORTAL,Royal Danish Library,https://www.kb.dk/,PUBLIC_PORTAL,VERIFY_AND_DOWNLOAD
+DK,Denmark,PUBLIC_PORTAL,Slave Voyages,https://www.slavevoyages.org/,PUBLIC_PORTAL,VERIFY_AND_DOWNLOAD
+DK,Denmark,PUBLIC_PORTAL,UN OHCHR,https://www.ohchr.org/,PUBLIC_PORTAL,VERIFY_AND_DOWNLOAD
+DK,Denmark,PUBLIC_PORTAL,Library of Congress,https://www.loc.gov/,PUBLIC_PORTAL,VERIFY_AND_DOWNLOAD
+DK,Denmark,PUBLIC_PORTAL,UNESCO Slavery Routes,https://www.unesco.org/en/routes-enslaved-peoples,PUBLIC_PORTAL,VERIFY_AND_DOWNLOAD
