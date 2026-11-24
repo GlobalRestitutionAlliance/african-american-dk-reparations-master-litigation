@@ -1,6 +1,6 @@
 # Citation Index
 
-Rule: NO_VERIFIED_WITHOUT_LOCAL_HASHED_ARTIFACT. All PENDING_LEGAL_REVIEW.
+Rule: NO_VERIFIED_WITHOUT_LOCAL_HASHED_ARTIFACT. All entries PENDING_LEGAL_REVIEW unless explicitly verified through local hashed artifact + human sign-off.
 
 - CIT-0001: https://www.rigsarkivet.dk/ | `03_Evidentiary_Exhibits/Immutable_Ledger/Danish_National_Archives.html` | `17336cbb961b2c5f...` | PENDING_LEGAL_REVIEW
 - CIT-0002: https://www.foia.gov/ | `03_Evidentiary_Exhibits/Immutable_Ledger/FOIA.gov.html` | `7ae1d7c682db5949...` | PENDING_LEGAL_REVIEW
@@ -17,3 +17,10 @@ Rule: NO_VERIFIED_WITHOUT_LOCAL_HASHED_ARTIFACT. All PENDING_LEGAL_REVIEW.
 - CIT-0013: https://history.state.gov/historicaldocuments | `03_Evidentiary_Exhibits/Immutable_Ledger/US_State_Dept_FRUS.html` | `c948fdff783f2e5f...` | PENDING_LEGAL_REVIEW
 - CIT-0014: https://en.wikisource.org/ | `03_Evidentiary_Exhibits/Immutable_Ledger/Wikisource.html` | `f1f02568e88c7f73...` | PENDING_LEGAL_REVIEW
 - CIT-0015: https://search.worldcat.org/ | `03_Evidentiary_Exhibits/Immutable_Ledger/WorldCat.html` | `5469d92c9fe3183c...` | PENDING_LEGAL_REVIEW
+- CIT-0016: https://chroniclingamerica.loc.gov/ | `03_Evidentiary_Exhibits/Immutable_Ledger/Chronicling_America_LOC_browser.html` | `05c0f0a2c7e2533c...` | PENDING_LEGAL_REVIEW
+- CIT-0017: https://www.courtlistener.com/ | `03_Evidentiary_Exhibits/Immutable_Ledger/CourtListener_browser.html` | `6ad74225955f1293...` | PENDING_LEGAL_REVIEW
+- CIT-0018: https://babel.hathitrust.org/ | `03_Evidentiary_Exhibits/Immutable_Ledger/HathiTrust_Digital_Library_browser.html` | `1fa623f55bb6b01c...` | PENDING_LEGAL_REVIEW
+- CIT-0019: https://www.justia.com/ | `03_Evidentiary_Exhibits/Immutable_Ledger/Justia_browser.html` | `12f4873a1de4ce37...` | PENDING_LEGAL_REVIEW
+- CIT-0020: https://digitallibrary.un.org/ | `03_Evidentiary_Exhibits/Immutable_Ledger/UN_Digital_Library_browser.html` | `82a3db0197cef4d3...` | PENDING_LEGAL_REVIEW
+- CIT-0021: https://www.unesco.org/en/routes-enslaved-peoples | `03_Evidentiary_Exhibits/Immutable_Ledger/UNESCO_Slave_Route_browser.html` | `aefeb2e7a3219844...` | PENDING_LEGAL_REVIEW
+- CIT-0022: https://data.worldbank.org/country/denmark | `03_Evidentiary_Exhibits/Immutable_Ledger/World_Bank_Denmark_browser.html` | `1ce1da9386f1bb3d...` | PENDING_LEGAL_REVIEW
